@@ -1,0 +1,48 @@
+import matplotlib.pyplot as plt
+
+# Data for plotting
+x = [1, 2, 3, 4, 5]
+y = [10, 20, 15, 30, 25]
+
+# 1. Line Plot
+plt.figure()
+plt.plot(x, y, marker='o')
+plt.title("Line Plot")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.grid()
+plt.show()
+
+# 2. Scatter Plot
+plt.figure()
+plt.scatter(x, y, color='red')
+plt.title("Scatter Plot")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.show()
+
+# 3. Bar Chart
+plt.figure()
+plt.bar(x, y, color='green')
+plt.title("Bar Chart")
+plt.xlabel("X-axis")
+plt.ylabel("Values")
+plt.show()
+
+# 4. Pie Chart
+labels = ['Python', 'Java', 'C++', 'JavaScript']
+sizes = [40, 25, 20, 15]
+
+plt.figure()
+plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+plt.title("Pie Chart")
+plt.show()
+
+# 5. Box Plot
+data = [10, 20, 15, 30, 25, 18, 22, 35, 40]
+
+plt.figure()
+plt.boxplot(data)
+plt.title("Box Plot")
+plt.ylabel("Values")
+plt.show()
