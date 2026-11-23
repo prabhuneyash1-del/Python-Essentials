@@ -1,0 +1,34 @@
+print("Program to calculate the area")
+
+def area():
+    ch = input("Enter the shape: ")
+    c = ch.title()
+
+    if c == "Circle":
+        r = float(input("Enter the radius of circle: "))
+        a = 3.14 * r * r
+        print("Area of circle is:", a)
+
+    elif c == "Square":
+        s = float(input("Enter the side of square: "))
+        a = s * s
+        print("Area of square is:", a)
+
+    elif c == "Rectangle":
+        l = float(input("Enter the length of rectangle: "))
+        b = float(input("Enter the breadth of rectangle: "))
+        a = l * b
+        print("Area of rectangle is:", a)
+
+    else:
+        print("Invalid shape")
+
+
+k = input("Enter 'y' to continue or 'n' to stop: ")
+
+while k == 'y':
+    print("Enter your choice for calculating area of different shapes")
+    area()
+    k = input("Enter 'y' to continue or 'n' to stop: ")
+
+print("Program ended")
